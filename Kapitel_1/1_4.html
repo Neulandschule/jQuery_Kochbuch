@@ -1,0 +1,44 @@
+<!--
+Selektieren von DOM-Elementen in einem bestimmten
+Kontext    
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input name="" type="checkbox" />
+        <input name="" type="radio" />
+        <input name="" type="text" />
+        <input name="" type="button" />
+    </form>
+
+    <form>
+        <input name="" type="checkbox" />
+        <input name="" type="radio" />
+        <input name="" type="text" />
+        <input name="" type="button" />
+    </form>
+
+    <input name="" type="checkbox" />
+    <input name="" type="radio" />
+    <input name="" type="text" />
+    <input name="" type="button" />
+
+    <script>
+        console.log(
+            //$('input', $('form')).length
+            //$('input', document.forms[0]).length
+            //$('input', 'body').length
+        ); 
+    </script>
+</body>
+
+</html>
