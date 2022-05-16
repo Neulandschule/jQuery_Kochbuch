@@ -1,0 +1,30 @@
+<!-- Elemente anhand von Attributen selektieren -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <a href="http://www.jquery.com">JQuery</a><br>
+    <a href="http://www.google.com">Google</a><br>
+    <a href="www.google.de Foo">Foo</a><br>
+    <a>Keine Verlinkung</a>
+
+    <script>
+        console.log(
+            //$('a[href]')
+            //$('a[href="http://www.jquery.com"]')
+            //$('a[href!="http://www.jquery.com"]')
+            //$('a[href^="http"]')
+            //$('a[href$=".com"]')
+            //$('a[href~="Foo"]')
+        );
+    </script>
+</body>
+
+</html>

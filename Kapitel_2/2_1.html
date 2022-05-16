@@ -1,0 +1,29 @@
+<!-- Nur Kind-Elemente selektieren -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <a href="/category">Category</a>
+    <ul id="nav">
+        <li><a href="#anchor1">Anker 1</a></li>
+        <li><a href="#anchor2">Anker 2</a></li>
+        <li><span><a href="#anchor3">Anker 3</a></span></li>
+    </ul>
+
+    <script>
+        console.log(
+            $('#nav li > a')
+            //$('li').children()
+        );
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!-- Elemente mit bestimmten Eigenschaften selektieren -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <p style="font-size: 5px;">Text 1</p>
+    <p style="font-size: 15px;">Text 2</p>
+    <p style="font-size: 25px;">Text 3</p>
+
+    <script>
+        console.log(
+            $('p').filter(function () {
+                let size_string = $(this).css('font-size');
+                let size = size_string.substr(0, size_string.length - 2);
+                return size > 10;
+            })
+        );
+    </script>
+</body>
+
+</html>
