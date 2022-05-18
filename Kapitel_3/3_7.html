@@ -1,0 +1,29 @@
+<!-- Konfigurieren von jQuery, so dass es nicht mit anderen
+Bibliotheken kollidiert -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="jQuery">Hallo, ich bin ein jQuery div</div>
+    <div id="prototype">Hallo, ich bin ein Prototype div</div>
+
+    <script>
+        jQuery.noConflict();
+
+        jQuery('div#jQuery').css('color', 'red');
+
+        $('prototype').setStyle({
+            color: 'blue'
+        });
+    </script>
+</body>
+
+</html>
